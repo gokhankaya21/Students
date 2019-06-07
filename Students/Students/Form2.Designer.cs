@@ -41,6 +41,7 @@
             this.saveButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.lessonsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,42 +96,42 @@
             // 
             // nameTextbox
             // 
-            this.nameTextbox.Location = new System.Drawing.Point(116, 12);
+            this.nameTextbox.Location = new System.Drawing.Point(113, 22);
             this.nameTextbox.Name = "nameTextbox";
             this.nameTextbox.Size = new System.Drawing.Size(320, 20);
             this.nameTextbox.TabIndex = 1;
             // 
             // surnameTextbox
             // 
-            this.surnameTextbox.Location = new System.Drawing.Point(116, 51);
+            this.surnameTextbox.Location = new System.Drawing.Point(113, 53);
             this.surnameTextbox.Name = "surnameTextbox";
             this.surnameTextbox.Size = new System.Drawing.Size(320, 20);
             this.surnameTextbox.TabIndex = 1;
             // 
             // emailTextbox
             // 
-            this.emailTextbox.Location = new System.Drawing.Point(116, 77);
+            this.emailTextbox.Location = new System.Drawing.Point(113, 84);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(320, 20);
             this.emailTextbox.TabIndex = 1;
             // 
             // phoneTextbox
             // 
-            this.phoneTextbox.Location = new System.Drawing.Point(113, 111);
+            this.phoneTextbox.Location = new System.Drawing.Point(113, 113);
             this.phoneTextbox.Name = "phoneTextbox";
             this.phoneTextbox.Size = new System.Drawing.Size(320, 20);
             this.phoneTextbox.TabIndex = 1;
             // 
             // gradeTextbox
             // 
-            this.gradeTextbox.Location = new System.Drawing.Point(350, 143);
+            this.gradeTextbox.Location = new System.Drawing.Point(350, 145);
             this.gradeTextbox.Name = "gradeTextbox";
             this.gradeTextbox.Size = new System.Drawing.Size(83, 20);
             this.gradeTextbox.TabIndex = 1;
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(350, 179);
+            this.saveButton.Location = new System.Drawing.Point(347, 232);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(86, 42);
             this.saveButton.TabIndex = 2;
@@ -140,7 +141,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(241, 179);
+            this.cancelButton.Location = new System.Drawing.Point(224, 232);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(88, 42);
             this.cancelButton.TabIndex = 2;
@@ -150,7 +151,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(12, 189);
+            this.deleteButton.Location = new System.Drawing.Point(12, 234);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(81, 38);
             this.deleteButton.TabIndex = 3;
@@ -158,11 +159,22 @@
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click_1);
             // 
+            // lessonsButton
+            // 
+            this.lessonsButton.Location = new System.Drawing.Point(12, 187);
+            this.lessonsButton.Name = "lessonsButton";
+            this.lessonsButton.Size = new System.Drawing.Size(81, 41);
+            this.lessonsButton.TabIndex = 4;
+            this.lessonsButton.Text = "Lessons";
+            this.lessonsButton.UseVisualStyleBackColor = true;
+            this.lessonsButton.Click += new System.EventHandler(this.lessonsButton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 239);
+            this.ClientSize = new System.Drawing.Size(445, 297);
+            this.Controls.Add(this.lessonsButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.saveButton);
@@ -199,5 +211,6 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button lessonsButton;
     }
 }

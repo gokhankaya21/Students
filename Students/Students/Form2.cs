@@ -13,10 +13,12 @@ namespace Students
     public partial class Form2 : Form
     {
         Student student = new Student();
+        Lesson lessons = new Lesson();
         Form1 form1;
-        public Form2()
+        public Form2(Form1 sender)
         {
             InitializeComponent();
+            this.form1 = sender;
             
         }
         public Form2(Form1 sender, Student student)
@@ -67,6 +69,12 @@ namespace Students
                 form1.deleteStudent(student);
             }
             this.Close();
+        }
+
+        private void lessonsButton_Click(object sender, EventArgs e)
+        {
+            var lessons = new Lessons(student);
+            lessons.Show();
         }
     }
 }
